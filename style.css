@@ -1,0 +1,170 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "fontbase";
+    src: url("font/PlayfairDisplay-Regular.ttf");
+}
+
+body
+{
+    margin: 0;
+    font-family: "fontbase",sans-serif ;
+
+}
+
+nav
+{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0px 2px 5px -2px #000000;
+    z-index: 3;
+}
+#logo
+{
+    padding: .8rem;
+}
+li
+{
+    display: inline;
+    padding: .8rem;
+}
+
+#imgHeader
+{
+    background-image: url("img/hamburger.jpg");
+    height: 48rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+h1
+{
+    margin: 2rem
+}
+
+main 
+{
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+h2, h3, p
+{
+    margin-top: rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    
+}
+
+h3, h2
+{
+    font-weight: normal;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+}
+h2
+{
+    font-weight: 600;
+}
+span
+{
+    text-decoration: unset;
+}
+
+
+#menu 
+{
+    width: 100%;
+    justify-content:space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu1, #menu img
+{
+    width: 100%;
+    padding: 20px;
+}
+
+@media screen and (min-width:992px) {
+    .menu1, #menu img{
+        width: 50%;
+    }
+}
+
+.menu1>h2
+{
+    text-align: center;
+}
+.menu1 p
+{
+    color: gray;
+}
+
+#contact, form
+{
+    display: flex; 
+    flex-direction: column;
+}
+input,textarea
+{
+    padding: 10px;
+    margin: 10px;
+    border:none;
+    border-bottom: 1px solid rgba(75, 75, 75, 0.397);
+}
+
+input:focus, textarea:focus
+{
+    outline: none;
+}
+textarea
+{
+    resize: none;
+}
+.button
+{
+    border-bottom: none;
+    width: fit-content;
+}
+hr
+{
+    border: 1px solid rgba(155, 154, 154, 0.062);
+    margin: 70px 0;
+}
+footer 
+{
+    height: 130px;
+    padding-top: 1rem;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+footer a 
+{
+    color: white;
+    text-decoration: none;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+a :hover
+{
+    color: white;
+}
+li:hover{
+    background-color: black;
+}
